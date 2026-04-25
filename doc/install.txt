@@ -1,0 +1,20 @@
+Dependencies (Windows)
+
+    scoop bucket add java
+    scoop install temurin17-jdk
+    py -m pip install pyspark
+
+Installation (Windows / Scoop)
+
+    scoop bucket add bryanlharris https://github.com/bryanlharris/scoop-bucket
+    scoop install get-schema
+
+Dependencies (RHEL)
+
+    dnf install java-17-openjdk
+    pip install pyspark
+
+Installation (RHEL)
+
+    rpmbuild -bb get-schema.spec
+    rpm -i ~/rpmbuild/RPMS/noarch/get-schema-1.0-1.cfpb.noarch.rpm
